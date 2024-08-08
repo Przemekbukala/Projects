@@ -117,7 +117,7 @@ uint32_t Least_common_multiple_euklides_extended(uint32_t a, uint32_t b, int32_t
         return b;
     }
 
-    int32_t x1, y1; // zmienne pomocnicze
+    int32_t x1, y1; 
     uint32_t gcd = Least_common_multiple_euklides_extended(b % a, a, &x1, &y1);
 
     *x = y1 - (b / a) * x1;
